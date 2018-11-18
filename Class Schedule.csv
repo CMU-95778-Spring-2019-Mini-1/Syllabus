@@ -1,17 +1,17 @@
-Week	Date	Topic	Topic Covered	Readings	Homeworks
-1	1/14/19	Lecture 1: Data Science Workflow		Read: https://rmarkdown.rstudio.com/r_notebooks.html	
-1	1/16/19	Lecture 2: Data Science Notebook		"Read Chapter 2, 6, and 16 in R for Data Science; Read Chapter 13 in R Packages"	Data Cleansing - Homework 1
-2	1/21/19	MLK Day			
-2	1/23/19	Lecture 3: Coding in R		"Read Chapter 1, 21, and 22 in R for Data Science"	
-3	1/28/19	Lecture 4: Tidyverse		Read Chapter 10 in R for Data Science	Homework 1 due/Graphing - Homework 2
-3	1/30/19	Lecture 5: Communication with Graphs		"Read Chapter 3, 9, and 14 in R for Data Science; Read paper: Tidy data by Hadley Wickham (https://www.jstatsoft.org/article/view/v059i10)"	
-4	2/4/19	Lecture 6: Vectorization		Read Chapter 15 in R for Data Science	Homework 2 due
-4	2/6/19	Lecture 7: Model Workflow		Read Chapter 17 in R for Data Science	Modeling - Homework 3
-5	2/11/19	Lecture 8: Tidymodel	CV and lm	Read Chapter 19 in R for Data Science	
-5	2/13/19	Lecture 9: Recipe	model setup/reproducibility		Homework 3 due/Regression - Homework 4
-6	2/18/19	Lecture 10: Regression	GLMN/MARS		
-6	2/20/19	Lecture 11: Classification	RandomForest/XGBoost	https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/	Classification and Dashboard - Homework 5 
-7	2/25/19	Lecture 12: Productionizing Models in R		Read blog: https://blog.codecentric.de/en/2017/11/explore-predictive-maintenance-flexdashboard/	Final Project
-7	2/27/19	Lecture 13: Shiny Apps	Basic Shiny and Flexdashboard		Homework 5 Due
-8	3/4/19	Lecture 14: Flexdashboard for model			
-8	3/6/19	Finals Day			Final Project Due
+Week,Date,Topic,Readings,Homeworks
+1,1/14/2019,Lecture 1: Data Science Workflow,Read Chapter 1 and 6 in R for Data Science,
+1,1/16/2019,Lecture 2: Coding in R,Read Chapter 9 and 12 in R for Data Science,Data Cleansing - Homework 1
+2,1/21/2019,MLK Day,,
+2,1/23/2019,Lecture 3: Tidyverse,Read: https://rmarkdown.rstudio.com/r_notebooks.html,
+3,1/28/2019,Lecture 4: Data Science Notebook,Read Chapter 3 and Chapter 28 in R for Data Science,Homework 1 due/Graphing - Homework 2
+3,1/30/2019,Lecture 5: Communication with Graphs,Read Chapters 20 and 21 in R for Data Science,
+4,2/4/2019,Lecture 6: Vectorization,Read Chapter 7 and 23 in R for Data Science,Homework 2 due
+4,2/6/2019,Lecture 7: Model Workflow,Read Chapter 24 in R for Data Science,Modeling - Homework 3
+5,2/11/2019,Lecture 8: Tidymodel,Read Chapter 25 in R for Data Science,
+5,2/13/2019,Lecture 9: Recipe,,Homework 3 due/Regression - Homework 4
+6,2/18/2019,Lecture 10: Regression,,
+6,2/20/2019,Lecture 11: Classification,,Classification and Dashboard - Homework 5 
+7,2/25/2019,Lecture 12: Productionizing Models in R,https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/,Final Project
+7,2/27/2019,Lecture 13: Shiny Apps,Read blog: https://blog.codecentric.de/en/2017/11/explore-predictive-maintenance-flexdashboard/,Homework 5 Due
+8,3/4/2019,Lecture 14: Flexdashboard for model,,
+8,3/6/2019,Finals Day,,Final Project Due
