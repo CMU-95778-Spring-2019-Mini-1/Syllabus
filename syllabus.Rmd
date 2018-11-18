@@ -16,7 +16,6 @@ library(tidyverse)
 knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
 options(htmltools.dir.version = FALSE)
 Class_Schedule <- read_csv("Class Schedule.csv", na = "empty")
-grading <- read.csv("Grading.csv", na = "empty")
 ```
 
 -------------------------------------------------------------
@@ -24,7 +23,7 @@ grading <- read.csv("Grading.csv", na = "empty")
 # Instructor
  
 Name: [Akbar Akbari Esfahani](https://www.linkedin.com/in/akbar-akbari-esfahani/)  
-Course Page: [GitHub Course Page](https://github.com/aakbarie/CMU_95778_A1)
+Course Page: [GitHub Course Page](https://github.com/CMU-95778-Spring-2019-Mini-1)
 Course Communication: [Slack](https://cmu95771a1.slack.com/)
 Email: akbar.esfahani@cmu.edu ***  
 Phone: 303-260-9482  
@@ -135,10 +134,7 @@ Late homework will not be accepted for credit.
 
 # Grading Scale
 
-```{r, echo=FALSE}
-knitr::kable(grading)
-```
-
+You can find the grading scale [here:](https://github.com/CMU-95778-Spring-2019-Mini-1/Syllabus/blob/master/Grading.xlsx)
 -------------------------------------------------------------
 # Collaboration  
    
