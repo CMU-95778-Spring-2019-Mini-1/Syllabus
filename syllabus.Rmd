@@ -1,0 +1,189 @@
+---
+title: '95-778: R for Data Science'
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+date: "`r Sys.Date()`"
+subtitle: Syllabus
+---
+
+```{r setup, include=FALSE}
+library(tufte)
+library(tidyverse)
+# invalidate cache when the tufte version changes
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('tufte'))
+options(htmltools.dir.version = FALSE)
+Class_Schedule <- read_csv("Class Schedule.csv", na = "empty")
+grading <- read.csv("Grading.csv", na = "empty")
+```
+
+-------------------------------------------------------------
+
+# Instructor
+ 
+Name: [Akbar Akbari Esfahani](https://www.linkedin.com/in/akbar-akbari-esfahani/)  
+Course Page: [GitHub Course Page](https://github.com/aakbarie/CMU_95778_A1)
+Course Communication: [Slack](https://cmu95771a1.slack.com/)
+Email: akbar.esfahani@cmu.edu ***  
+Phone: 303-260-9482  
+Office Hours:  
+  
+- Reach out to me on our Slack Channel and I will respond quickly  
+  
+### Slack for Communication
+  
+We will be using slack for class communication and you should already have an invite in your mailbox.
+  
+-------------------------------------------------------------
+
+# Course Description
+
+This course introduces students to advanced features in R to prepare them for a career in Data Science. Students will be exposed to the Tidyverse framework, the advanced method of manipulating data within R as well as the data science lifecycle that is encompassed within RStudio. The course will cover data wrangling, advanced data visualization (including d3), and the modeling paradigm of Machine Learning. These are the skills that allow data science to happen, and students will get the practices by doing each of these things with R. Students will also be exposed to daily routines of data science and will be given problems from industry to solve. Further, the course will expose students to data science application lifecycle using Git for version control and GitHub for communication and collaboration of data science projects.  
+
+
+By the end of the class, students learn to:  
+
+- Use [RStudio](http://www.rstudio.com) projects and advanced features.    
+- Use Git for version contriol.  
+- Use [GitHub](http://www.GitHub.com) for collaboration.  
+- Use R to perform modeling.  
+- Use RStudio Shiny to present your work.  
+- Import and export data from various sources.  
+- Perform data wrangling.  
+- Produce visualizations with ggplot2 and other libraries.  
+- Perform machine learning models in R.  
+- Use R Notebook to perform data science analysis.  
+- Create simple Shiny dashboards.  
+
+-------------------------------------------------------------
+
+# Textbooks
+
+The required textbook for the course is Garrett Grolemund and Hadley Wickham: [R for Data Science](http://r4ds.had.co.nz/)  
+  
+In addition we will be using excerpts from the following books, their purchase is not required  
+
+- [R Packages](http://r-pkgs.had.co.nz/) by Hadley Wickham  
+- [GGPlot2](http://ggplot2.org/book/) by Hadley Wickham  
+- [Advanced R](http://adv-r.had.co.nz/) by Hadley Wickham  
+- [Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by Hastie, Tibshirani and Friedman  
+   
+-------------------------------------------------------------
+
+# Helpful Resources  
+  
+- [Tidyverse](https://www.tidyverse.org/)  
+- [RStudio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
+- [Stackoverflow](https://stackoverflow.com/)  
+- [GitHub](https://github.com/)   
+- [UCLA Institute for Digital Research and Education](https://stats.idre.ucla.edu/)   
+
+-------------------------------------------------------------
+  
+# Coursework  
+  
+Your grade in this course will be determined by a series of  
+  
+- 5 homework assignments (20%)  
+- class participation/lab (25%)  
+- final project (50%)  
+- Quizzes (5%)
+  
+### Assignments
+  
+Assignments can be completed using a single R Markdown file: namely, code snippets integrated with captions and other narrative or an R Notebook. While I will cover R Notebooks as part of the course later in the session, I encourage the usage of it for completing your homeworks. The usage of R Notebook will gain you an extra credit up to 10% on top of your grade, up to 100% of the total homework grade. (if your homework is 100%, the usage of R Notebook will not gain you extra credit)  
+
+-------------------------------------------------------------
+
+# Final project
+
+The final project for the class will ask you to perform a complete data science project. This project is intended to provide students with the complete experience of going from a business question and a source data set to a full business report.  
+  
+Students will be expected to:  
+
+- Create GitHub project  
+- Explore and clean data  
+- Find a business question from the data  
+- Create a model that answers the business question  
+- Produce tabular and graphical summaries that support the findings  
+- Use R Notebook for ad-hoc work and to collaborate
+- Write a report using R-Markdown describing the data, the model, the findings, and report needs to include a business summary  
+- The report should include, as an appendix, an explanation of why you chose your model  
+  
+Students are required to work in groups of 3 and use GitHub to design, develop and excute the project. Each group is required to turn in a final report to pass the class and each students must receive a score of at least 50% on the final project in order to pass the class. 
+
+-------------------------------------------------------------
+
+# Course Grading  
+  
+Your final course grade will be calculated according to the following breakdown.  
+  
+- Assignments	20%  
+- Participation	10%  
+- Labs 15%  
+- Final project 50% 
+- Weekly Quizes 5%
+  
+### Late submission
+   
+Homework is to be submitted by beginning of class the following week.  
+Late homework will not be accepted for credit.  
+
+-------------------------------------------------------------
+
+# Grading Scale
+
+```{r, echo=FALSE}
+knitr::kable(grading)
+```
+
+-------------------------------------------------------------
+# Collaboration  
+   
+You are encouraged to discuss homework problems with your fellow students. However, the work you submit must be your own. You must acknowledge in your submission any help received on your assignments. That is, you must include a comment in your homework submission that clearly states the name of the student, book, or online reference from which you received assistance.  
+
+Submissions that fail to properly acknowledge help from other students or non-class sources will receive no credit. Copied work will receive no credit. Any and all violations will be reported to Heinz College administration.  
+
+All student are expected to comply with the CMU policy on academic integrity. This policy can be found online at http://www.cmu.edu/academic-integrity/.  
+
+### What constitutes plagiarism in a coding class?  
+The course collaboration policy allows you to discuss the problems with other students, but requires that you complete the work on your own. Every line of text and line of code that you submit must be written by you personally.  
+  
+As this is a course on data science and involves business processes, I expect students to perform with professional standards. Copying code snippets from the internet are a daily occurence in the real world and it will not be held against you, however; it is expected that proper credit be given.  
+
+-------------------------------------------------------------
+  
+# Policies  
+  
+### Computing:  
+  
+The statistical computing package we will use in this course is R, which is available on many campus computers. You may download your own copy from https://www.r-project.org. Since the course requires all students to use GitHub and collaboration, it is also required to use RStudio from https://www.rstudio.com.  
+
+### Laptop Policy:
+  
+Students are expected to be participate in class, either on their own laptops or on the provided lab machines.  
+  
+### Communication:
+  
+Assignments and class information will be posted on Canvas and the class website as well as GitHub course site.  
+  
+### Email:  
+  
+Slack should be used for general course-related questions that may be of interest to others in the class. For other types of questions (e.g., to report illness, request various permissions) please contact me via email. 
+Please include the course code 95-778 in the subject line of your email.  
+  
+### Disability Services:  
+
+If you have a disability and need special accommodations in this class, please contact the instructor. You may also want to contact the Disability Resources office at 8-2013.  
+
+-------------------------------------------------------------
+  
+# Tentative Schedule
+  
+```{r, echo=FALSE}
+
+knitr::kable(Class_Schedule)
+```
+
